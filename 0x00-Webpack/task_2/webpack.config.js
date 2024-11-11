@@ -5,7 +5,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js',
-    assetModuleFilename: 'images/[hash][ext][query]'
+    assetModuleFilename: 'images/[hash][ext][query]',
   },
   module: {
     rules: [
@@ -15,8 +15,13 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
-        type: 'asset/resource',
         use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'images/[name].[hash].[ext]',
+            },
+          },
           {
             loader: 'image-webpack-loader',
             options: {
@@ -43,5 +48,5 @@ module.exports = {
       },
     ],
   },
-  mode: 'production'
+  mode: 'production',
 };
