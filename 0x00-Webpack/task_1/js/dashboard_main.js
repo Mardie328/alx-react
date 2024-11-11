@@ -15,4 +15,4 @@ function updateCounter() {
 }
 
 // Imported from lodash to debounce the click event
-$('button').on('click', debounce(updateCounter, 300));
+$('button').on('click', debounce(updateCounter, 500));
