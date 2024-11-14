@@ -4,16 +4,16 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
         <img src={holbertonLogo} className="Holberton-logo" alt="Holberton logo" />
         <h1>School dashboard</h1>
-      </header>
-      <main className="App-body">
+      </div>
+      <div className="App-body">
         <p>Login to access the full dashboard</p>
-      </main>
-      <footer className="App-footer">
+      </div>
+      <div className="App-footer">
         <p>Copyright 2020 - Holberton School</p>
-      </footer>
+      </div>
     </div>
   );
 }
