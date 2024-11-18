@@ -1,15 +1,71 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>Dashboard</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <div id="root-notifications"></div>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script src="./bundle.js"></script>
-  </body>
-</html>
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module not found: Error: Can't resolve '/root/alx-react/0x05-react_state/task_0/dashboard/dist/index.html' in '/root/alx-react/0x05-react_state/task_0/dashboard'
+  Did you miss the leading dot in 'resolve.extensions'? Did you mean '[".*",".js",".jsx"]' instead of '["*",".js",".jsx"]'?
+  ModuleNotFoundError: Module not found: Error: Can't resolve '/root/alx-react/0x05-react_state/task_0/dashboard/dist/index.html' in '/root/alx-react/0x05-react_state/t  ask_0/dashboard'
+  Did you miss the leading dot in 'resolve.extensions'? Did you mean '[".*",".js",".jsx"]' instead of '["*",".js",".jsx"]'?
+      at /root/alx-react/0x05-react_state/task_0/dashboard/node_modules/webpack/lib/Compilation.js:2123:28
+      at /root/alx-react/0x05-react_state/task_0/dashboard/node_modules/webpack/lib/NormalModuleFactory.js:923:13
+      at eval (eval at create (/root/alx-react/0x05-react_state/task_0/dashboard/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:10:1)
+      at /root/alx-react/0x05-react_state/task_0/dashboard/node_modules/webpack/lib/NormalModuleFactory.js:339:22
+      at eval (eval at create (/root/alx-react/0x05-react_state/task_0/dashboard/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at /root/alx-react/0x05-react_state/task_0/dashboard/node_modules/webpack/lib/NormalModuleFactory.js:520:22
+      at /root/alx-react/0x05-react_state/task_0/dashboard/node_modules/webpack/lib/NormalModuleFactory.js:151:10
+      at /root/alx-react/0x05-react_state/task_0/dashboard/node_modules/webpack/lib/NormalModuleFactory.js:783:25
+      at /root/alx-react/0x05-react_state/task_0/dashboard/node_modules/webpack/lib/NormalModuleFactory.js:1008:8
+      at /root/alx-react/0x05-react_state/task_0/dashboard/node_modules/webpack/lib/NormalModuleFactory.js:1137:5
+  
+  - Compilation.js:2123 
+    [dashboard]/[webpack]/lib/Compilation.js:2123:28
+  
+  - NormalModuleFactory.js:923 
+    [dashboard]/[webpack]/lib/NormalModuleFactory.js:923:13
+  
+  
+  - NormalModuleFactory.js:339 
+    [dashboard]/[webpack]/lib/NormalModuleFactory.js:339:22
+  
+  
+  - NormalModuleFactory.js:520 
+    [dashboard]/[webpack]/lib/NormalModuleFactory.js:520:22
+  
+  - NormalModuleFactory.js:151 
+    [dashboard]/[webpack]/lib/NormalModuleFactory.js:151:10
+  
+  - NormalModuleFactory.js:783 
+    [dashboard]/[webpack]/lib/NormalModuleFactory.js:783:25
+  
+  - NormalModuleFactory.js:1008 
+    [dashboard]/[webpack]/lib/NormalModuleFactory.js:1008:8
+  
+  - NormalModuleFactory.js:1137 
+    [dashboard]/[webpack]/lib/NormalModuleFactory.js:1137:5
+  
+  - child-compiler.js:211 
+    [dashboard]/[html-webpack-plugin]/lib/child-compiler.js:211:18
+  
+  - Compiler.js:629 finalCallback
+    [dashboard]/[webpack]/lib/Compiler.js:629:5
+  
+  - Compiler.js:664 
+    [dashboard]/[webpack]/lib/Compiler.js:664:11
+  
+  - Compiler.js:1350 
+    [dashboard]/[webpack]/lib/Compiler.js:1350:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [dashboard]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1346 
+    [dashboard]/[webpack]/lib/Compiler.js:1346:33
+  
+  - Compilation.js:2938 finalCallback
+    [dashboard]/[webpack]/lib/Compilation.js:2938:11
+  
+  - Compilation.js:3251 
+    [dashboard]/[webpack]/lib/Compilation.js:3251:11
+  
+  
+</pre>
